@@ -1,0 +1,68 @@
+body {
+
+font-family: Arial;
+margin: 0;
+background: #f4f4f4;
+
+}
+
+header {
+
+background: #2c3e50;
+color: white;
+padding: 20px;
+text-align: center;
+
+}
+
+nav {
+
+background: #34495e;
+padding: 10px;
+text-align: center;
+
+}
+
+nav button {
+
+margin: 5px;
+padding: 10px;
+border: none;
+background: white;
+cursor: pointer;
+
+}
+
+main {
+
+padding: 20px;
+
+}
+
+section {
+
+display: none;
+
+}
+
+input, select {
+
+padding: 8px;
+margin: 5px;
+
+}
+
+button {
+
+padding: 8px 12px;
+
+}
+
+.settings{
+display:none;
+background:white;
+padding:20px;
+margin-top:30px;
+border-radius:10px;
+width:400px;
+}

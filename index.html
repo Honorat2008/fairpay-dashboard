@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>FairPay Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<aside class="sidebar">
+<h2 id="nomEntreprise">FairPay</h2>
+
+<h4>Principal</h4>
+<ul>
+<li class="active">Dashboard</li>
+</ul>
+
+<h4>Outils</h4>
+<ul>
+<li id="btnParam">Paramètres</li>
+</ul>
+</aside>
+
+<main class="main">
+
+<header>
+<h1>Dashboard</h1>
+<button id="btnFacture">+ Nouvelle facture</button>
+</header>
+
+<section class="cards">
+
+<div class="card">
+<h3>Revenus ce mois</h3>
+<p class="amount">8 450 €</p>
+<span class="green">+14%</span>
+</div>
+
+<div class="card">
+<h3>En attente</h3>
+<p class="amount">3 200 €</p>
+<span>4 factures</span>
+</div>
+
+<div class="card">
+<h3>Clients actifs</h3>
+<p class="amount">12</p>
+<span class="green">+2 nouveaux</span>
+</div>
+
+</section>
+
+<section class="table">
+
+<h2>Factures récentes</h2>
+
+<table id="tableFactures">
+
+<tr>
+<th>Client</th>
+<th>Projet</th>
+<th>Montant</th>
+<th>Échéance</th>
+<th>Statut</th>
+</tr>
+
+<tr>
+<td>Acme Studio</td>
+<td>Refonte UI</td>
+<td>2400 €</td>
+<td>28 fév.</td>
+<td class="paid">Payée</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="parametres" class="settings">
+
+<h2>Compte</h2>
+
+<label>Email</label>
+<input type="text" id="email">
+
+<label>Mot de passe</label>
+<input type="password" id="password">
+
+<br>
+<button id="loginBtn">Se connecter</button>
+<button id="logoutBtn">Se déconnecter</button>
+
+<hr>
+
+<h2>Entreprise</h2>
+
+<label>Nom de l'entreprise</label>
+<input type="text" id="entreprise">
+
+<label>Devise</label>
+<select id="devise">
+<option>€ Euro</option>
+<option>$ Dollar</option>
+<option>FCFA</option>
+</select>
+
+<br><br>
+
+<button id="btnSave">Sauvegarder</button>
+
+</section>
+
+</main>
+
+</div>
+
+<div id="formulaire" class="popup">
+
+<h2>Nouvelle facture</h2>
+
+<input type="text" id="client" placeholder="Client">
+<input type="text" id="projet" placeholder="Projet">
+<input type="number" id="montant" placeholder="Montant">
+<input type="text" id="date" placeholder="Échéance">
+
+<button id="addFacture">Ajouter</button>
+<button id="closeForm">Fermer</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
